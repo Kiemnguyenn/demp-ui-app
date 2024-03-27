@@ -1,0 +1,52 @@
+.tab ul {
+    list-style-type: none;
+}
+
+.tab ul li {
+    display: inline;
+    color: #a0a0a0;;
+    text-align: center;
+}
+
+.tab ul li:hover {
+    color:black;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+}
+
+.show-content {
+    display: block;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+li {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+li:after {
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+li:hover:after {
+    width: 100%;
+}
